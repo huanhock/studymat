@@ -1,0 +1,90 @@
+1) What is homebrew?
+
+  Homebrew is a free and open-source software package management system that
+  simplifies the installation of software on Apple's OS X operating system.
+
+2) What is git and why do we need it?
+
+  Git serves as a version control software that allows coding work to be
+  snapshotted. The integrity of Git also makes it essential as a main
+  working tool to most programmers.
+
+3) What is rbenv?
+
+  Ruby related. Skipped.
+
+4) Describe the format of an IP address
+
+  IP address comprises of 4 ranged numbers. All 4 numbers range from 0 to 255.
+
+5) What is HTTP? How is it different from HTTPS?
+
+  HTTP and HTTPS both represents the protocol in which how the server and the
+  client communicates with each other. HTTPS connections are encrypted. The
+  connection using HTTPS protocol requires authentication of the server and
+  client machine.
+
+6) Describe the format of an IP address
+
+  The first part of the URL states the protocol the site is running. The
+  second part of the URL is the domain name, starting from www to .com. The
+  rest of the URL is the directory in which the HTML file is stored, or a
+  dynamic URL that the page is generated from.
+
+7) What's a GUI? What's a CLI? Can you give an example of each?
+
+  GUI stands for Graphical User Interface. CLI stands for Command Line
+  Interface. An example of GUI is a calculator application. An example of
+  CLI is the terminal.
+
+8) Explain the difference between absolute path and relative path. Provide an
+   example.
+
+  Absolute path directs the path from the root directory of the given machine.
+  Relative path directs the path from the current working directory. Relative
+  path starts with / while absolute path start directly with a directory name.
+
+9) How can I see all the commands I've typed in the terminal before?
+
+  Press the up arrow key to see the previous terminal commands.
+
+10) What's root directory? What is home directory? How can I quickly go to my
+    home directory in the shell?
+
+  A root directory is where all the file system of your machine starts from.
+  Home directory is where the user files starts from and used by the user the
+  most. You can use cd ~ to quickly switch to your home directory.
+
+11) Write the command needed to:
+
+- List all the files in the working directory
+  ls
+
+- List all the files in the working directory, with detailed information
+  ll
+
+- Create a file named my_heart
+  touch my_heart
+
+- Create a new directory named homework
+  mkdir homework
+
+- Copy the foo directory into a new directory named bar
+  cp foo bar
+
+- Rename the /usr/local/ directory to /usr/home
+  mv /usr/local/ /usr/home
+
+12) Please describe the permission of my_file.txt
+    -rw-r-x-wx  1 michael wdi_9 224 Jul 29 21:03 my_file.txt
+
+  The first 3 letters represents user's permission with the file, next 3 is
+  group's permission and last 3 is other user's permission. They represent
+  read, write and executable respectively.
+
+13) What is $PATH? Why is it useful? How can I see the contents of the PATH
+    environment variable in the shell?
+
+  $PATH is an environment variable. It supports all environment path for
+  applications in the terminal to find themselves and work. You can see the
+  PATH contents by using echo $PATH.
