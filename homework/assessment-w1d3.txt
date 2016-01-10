@@ -1,0 +1,245 @@
+1)  What are the three ways we can include css in an html file?
+    Provide an example of each.
+
+    The first method is via inline CSS. The following shows how to use an
+    inline CSS in an HTML file.
+
+    <body style="background-color: blue;"
+
+    The second way is via internal CSS. The following shows how to use an
+    internal CSS in an HTML file.
+
+    <style>
+      body {
+        background-color: blue;
+      }
+
+    </style>
+
+    The third way is via external CSS. The following shows how to use an
+    external CSS in an HTML file.
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+2)  What's the difference between classes and id selectors? When would we
+    use each? Provide an example of each.
+
+    Classes are very different compared to ID selectors as classes can be
+    repeated as many times as you want, but ID cannot be repeated as each
+    ID has to be unique. ID selectors can only take one ID at a time for
+    each element, while classes can take more than one class at a time.
+    Furthermore, the same class can be reused again for other elements to
+    group them up together under the same class. Following are examples of the
+    usage of classes and ID selectors respectively.
+
+    <body class="main-body other-classes bla-bla"></body>
+
+    <body id="main-body"></body>
+
+3)  Explain the use for elements, network and console tabs in the chrome
+    devTools.
+
+    Elements tab is used to inspect the HTML and CSS of a web page. We can use
+    it to test the site in different layouts. We can also do live-editing
+    CSS on-the-fly.
+
+    Network tab records information about each network operation in your
+    application, including detailed timing data, HTTP request and response
+    headers, cookies, WebSocket data, and more.
+
+    Console tab in Chrome DevTools is actually a JavaScript console with the
+    web page as the sandboxed environment.
+
+4)  Given this html snippet, please fix the mistakes and clean it up. You can
+    make sure it passes the W3C Validation check. Also note that by default,
+    we should use 2 spaces for indentation.
+
+<html>
+  <head>
+    <!-- No h1 in head -->
+    <!-- Closing tags -->
+    <title>WDI HK June 2015</title>
+    <meta value="description" content="Web development immersive">
+  </head>
+  <body>
+    <header>
+      <h1>Web Development Immersive</h1>
+      <div>General Assembly Autumn/Winter 2013</div>
+      <nav>
+        <div>
+          <div><a hef="#program">Program</a></div>
+          <div><a href="#students">Students</a></div>
+          <div><a hrf="#concepts">Concepts</a></div>
+          <div><a href="#instructors">Instructors</a></div>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <h3 class="title"><a id="program" href="">The Program</a></h3>
+      <div>12 weeks of intensive web development training learning a range
+          of programming techniques and languages.
+      </div>
+    </div>
+    <div>
+      <h3 class="title"><a id="students" href="">The Students</a></h3>
+      <h3>The London WDI Session 3 Coding Collective</h3>
+      <div>We faced missing routes, broken links, aborted rake tasks,
+        rejected mass-assignments, failed deployments, nilClasses, illegal
+        nestings, conflicted merges, rogue debuggers, unexpected keyword
+        ends, incomplete divs, unintentional infinite loops, uncooperative
+        asset pipelines, empty migrations, unresponsive APIs, undefined
+        defined methods, overly-sassy css, dirty data, faulty gems, terrible
+        animated gifs, excessive pizza, punchy classmates, demanding
+        instructors and long days. And we won!
+      </div>
+    </div>
+    <div>
+      <h3 class="title"><a id="concepts" href="">The Concepts</a></h3>
+      <div>We were taught a lot of concepts. Over 12 weeks with three
+        projects, one hackathon and not much sleep, we learned and
+        practiced a full range of front- and back-end concepts.
+        Take a look at some of what we covered...
+      </div>
+      <div>
+        <ul>
+          <li>OOP</li>
+          <li>Agile Development</li>
+          <li>TDD</li>
+          <li>BDD</li>
+          <li>Ruby</li>
+          <li>Variables</li>
+          <li>Conditionals</li>
+          <li>Blocks</li>
+          <li>Enumerators</li>
+          <li>Strings, Symbols</li>
+          <li>Arrays, Hashes</li>
+          <li>Methods</li>
+          <li>Classes</li>
+          <li>Inheritance</li>
+          <li>Scope</li>
+          <li>Patterns</li>
+          <li>Refactoring</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>HTTP Requests</li>
+          <li>URL, URI</li>
+          <li>Networking</li>
+          <li>SSH</li>
+          <li>Sessions</li>
+          <li>Authentication</li>
+          <li>Authorization</li>
+          <li>Web Scraping</li>
+          <li>Cookies</li>
+          <li>HTTP APIs</li>
+          <li>RESTful APIs</li>
+          <li>HTTParty</li>
+          <li>Uploads</li>
+          <li>File I/O</li>
+          <li>Amazon S3 AWS</li>
+          <li>Sublime</li>
+          <li>Environment variables</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Version Control</li>
+          <li>Git and Github</li>
+          <li>Sinatra</li>
+          <li>Rails</li>
+          <li>MVC</li>
+          <li>Models</li>
+          <li>Views</li>
+          <li>Controllers</li>
+          <li>Routing</li>
+          <li>i18n</li>
+          <li>Helpers</li>
+          <li>Mailers</li>
+          <li>Serializers</li>
+          <li>Modules</li>
+          <li>Callbacks</li>
+          <li>Rake Tasks</li>
+          <li>Rails Console</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>ActiveRecord</li>
+          <li>Migrations</li>
+          <li>Validations</li>
+          <li>Relational DBs</li>
+          <li>SQL</li>
+          <li>Joins</li>
+          <li>Includes</li>
+          <li>MongoDB</li>
+          <li>Redis</li>
+          <li>Query string</li>
+          <li>Deploying</li>
+          <li>Heroku</li>
+          <li>Mandrill</li>
+          <li>Twilio</li>
+          <li>Exceptions</li>
+          <li>Exception Handling</li>
+          <li>Logs</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Cancan</li>
+          <li>Carrierwave</li>
+          <li>Bcrypt</li>
+          <li>Devise</li>
+          <li>Sidekiq</li>
+          <li>Textacular</li>
+          <li>Factory Girl</li>
+          <li>High Voltage</li>
+          <li>Rspec</li>
+          <li>Nokogiri</li>
+          <li>Acts as Draggable</li>
+          <li>Acts as Taggable</li>
+          <li>Will Paginate</li>
+          <li>Nested Forms</li>
+          <li>Geocoder</li>
+          <li>Jekyll</li>
+          <li>Better Errors</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>Coffeescript</li>
+          <li>JSON</li>
+          <li>AJAX</li>
+          <li>Ember</li>
+          <li>Jasmine</li>
+          <li>Underscore.js</li>
+          <li>Templates</li>
+          <li>Responsive design</li>
+          <li>HTML</li>
+          <li>HAML</li>
+          <li>Handlebars</li>
+          <li>ERB</li>
+          <li>CSS</li>
+          <li>SCSS, SASS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div>The Instructors</div>
+      <a name="instructors"></a>
+      <div>They taught us everything we know</div>
+      <div>Well, let's be honest. They taught us a lot more than we know,
+       but some of it didn't commit to memory. But we are hackers now,
+       thanks to these four.
+      </div>
+    </div>
+  </body>
+  <footer>
+      <div>Web Development Immersive Course Webpage <span>General Assembly
+        London </span><span>2013</span>
+      </div>
+  </footer>
+</html>
