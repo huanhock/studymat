@@ -2,7 +2,7 @@
  * Arrays
  * Most of your answers should be stored in variables called q1, q2 etc.. and the variables printed to the console.
 
- 	(i.e) console.log("Question 1" + q1)
+	(i.e) console.log("Question 1" + q1)
  */
 
 /**
@@ -11,6 +11,8 @@
  */
 
 // Your code here
+var q1 = ["image1.png", "image2.png", "image3.png"];
+console.log("Question 1: " + q1);
 
 /**
  * Question 2
@@ -18,6 +20,8 @@
  */
 
 // Your code here
+var q2 = q1[0];
+console.log("Question 2: " + q2);
 
 /**
  * Question 3
@@ -25,6 +29,8 @@
  */
 
 // Your code here
+var q3 = q2.length;
+console.log("Question 3: " + q3);
 
 /**
  * Question 4
@@ -33,15 +39,15 @@
 
 
 // Your code here
-
-
+var q4 = q1[q1.length - 1];
+console.log("Question 4: " + q4);
 // ____________________________________________________________________________
 
 /**
  * Arrays + Iteration
  * Most of your answers should be stored in variables called q1, q2 etc.. and the variables printed to the console.
 
- 	(i.e) console.log("Question 1" + q1)
+	(i.e) console.log("Question 1" + q1)
  */
 
 /**
@@ -51,7 +57,11 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
-
+q1 = [1, 2, 3, 4];
+q1.forEach(function (element, index) {
+  q1[index] = element + 1;
+});
+console.log("Question 5: " + q1);
 
 /**
  * Question 2
@@ -60,3 +70,9 @@ The end result should be an array of numbers with values 2,3,4,5
 
 
 // Your code here
+var sum = 0;
+q1.forEach(function (element) {
+  sum += element;
+});
+q2 = sum / q1.length;
+console.log("Question 6: " + q2);
