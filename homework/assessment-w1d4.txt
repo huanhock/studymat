@@ -1,0 +1,103 @@
+CSS
+
+1)  What are the four main component when considering CSS specificity?
+
+    Inline CSS, ID identifier, class and pseudo-class, element and
+    pseudo-element.
+
+2)  If I have 1) ul#nav li.active a and 2) div.navbar li.active a.social
+    which will have more specificity?
+
+    The first selector will have more specificity than the other selector.
+
+3)  What code can you put at background: black; to override specificity?
+
+    !important
+
+4)  What are the four elements in a box-model?
+
+    Content, padding, border and margin.
+
+5)  What are the differences between inline, block, and inline-block?
+
+    Inline elements has no line break before or after it. It only takes up as
+    width as it needs. Inline places all of your elements on a single line,
+    and they don't maintain their "box" properties.
+
+    Block elements has some white space above and below it and does not
+    tolerate any HTML elements beside it. This makes the element a block box.
+    It won't let anything sit next to it on the page and takes up the full
+    width.
+
+    Inline-block elements are placed as inline element, but it behaves as a
+    block element. This makes the element a block box but will allow other
+    elements to sit next to it on the same line.
+
+6)  What are the differences between position relative and absolute?
+
+    Relatively positioned elements will cause it to be adjusted away from
+    its normal position. Other content will not be adjusted to fit into any
+    gap left by the element.
+
+    Absolutely positioned elements will position the element relative to the
+    nearest positioned ancestor.
+
+    Statically positioned elements are as per normal, as it is a default
+    option in most browsers.
+
+    Fixed positioned element is removed from the normal page composition,
+    instead it is now based on the viewport of the browser window.
+
+7)  If I add the following CSS to position: static, what would happen?
+
+    div {
+      position: static;
+      top: 100px;
+      right: 100px;
+    }
+
+    Nothing will happen. Position: static is a default option on browsers
+    anyway, and top and right options only work on absolutely positioned
+    elements.
+
+JS
+
+1)  What are the four common data types you come across different languages?
+
+    Number, String, Boolean, Object
+
+2)  What is the method used to calculate 2 to the power of 2 and square root
+    of 4?
+
+    Math.pow(2, 2), Math.sqrt(4)
+
+3)  What is the method to use to round down and round up a float?
+
+    Math.floor(float), Math.ceil(float)
+
+4)  Name 2 other methods, excluding example, that you can use on Strings.
+    Example "hello".charAt(0)
+
+    "hello".toUpperCase(), "hello".toLowerCase()
+
+5)  What is the difference between null and undefined?
+
+    Null is not a valid number or string, while undefined means that the
+    variable is not assigned to anything yet.
+
+6)  Given this array var cuteAnimals = ["cat", "dog", "hedgehog"], write two
+    loops using xxx.forEach() and good old fashion for (var i=0.... to
+    console log "I love cat", "I love dog", and "I love hedgehog".
+
+    cuteAnimals.forEach(function (element) {
+      console.log("I love " + element);
+    });
+
+    for (var i=0; i < cuteAnimals.length; i++) {
+      console.log("I love " + cuteAnimals[i]);
+    }
+
+7)  Name 2 other methods, excluding example, that you can use on Arrays.
+    Example myArray.toString()
+
+    myArray.length, myArray.pop
