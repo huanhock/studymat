@@ -1,0 +1,133 @@
+Functions and Scope
+
+1)  Describe what a function is/does?
+
+    A function is a block of code statements waiting to be executed whenever
+    the function is called.
+
+2)  How do I declare a function and how do I run a function?
+
+    A function is declared by assigning it to a variable or giving it a name.
+    A function is run by calling the function name or the variable that it was
+    assigned to followed by a pair of parentheses.
+
+3)  Given the following code, what is the command to console log hello world?
+
+    var hello = function () {
+      return function () {
+        return function () {
+          console.log("hello world");
+        };
+      };
+    };
+
+    hello();
+
+4)  Would the following code console.log destroy the world? Or would it give
+    you an error saying b is not defined? Explain your answer.
+
+    var a = "hello world!";
+    var myFunction = function() {
+      var b = "destroy the world!";
+    }
+    myFunction();
+    console.log(b);
+
+    b is not defined. A function scope is a local scope. Global level would
+    not be able to see the variable being declared in the function scope.
+
+5)  Would the following code console.log 25 or would it console.log 1?
+    Explain your answer.
+
+    var a = 5;
+    var myFunction = function() {
+      console.log(a*a);
+    }
+    var otherFunction = function () {
+      myFunction = function() {
+        console.log(a/a);
+      }
+    }
+
+    otherFunction();
+    myFunction();
+
+    1. myFunction being in the global scope is accessible from anywhere.
+    otherFunction changes myFunction's value and the change was permanent.
+    otherFunction does not do any console.log, but only changes the value of
+    myFunction.
+
+6)  What is the difference between the following code?
+
+    function add (a) {
+      return a+a;
+    }
+
+    add = function (a) {
+      return a+a;
+    }
+
+    The first function could be used wherever the function is called. However,
+    the second function needs to be initiated before the line of code that
+    calls it, or it will bump into an undefined function error.
+
+7)  Which of these function would work, and which one would not?
+    Explain your answer.
+
+    console.log(a())
+    console.log(b())
+    function a() {return "321"}
+    b = function () {return "123"}
+
+    a will work, while b will not. Function expression only evaluates when the
+    line of code is reached before a call to it surfaces. Function a will work
+    wherever the function is initialized as function declaration is processed
+    before any code is read.
+
+Objects
+
+1)  What is an object?
+
+    A collection of properties, and a property is an association between a name
+    (or key) and a value. A property's value can be function, in which case
+    the property is known as a method.
+
+2)  What are the ways to create an object?
+
+    Declaring, assigning it to a variable.
+
+3)  What does a property in an object contain?
+
+    A value that is inherited from the ascending classes that prototyped the
+    object that the property is in.
+
+4)  Given the following object. Use dot notation to get "Fer" and bracket
+    notation to get the "Denis".
+
+    var wdi = {
+      instructor1: "Fer",
+      instructor2: "Denis",
+      mysteriousInstructor: "Harry"
+    }
+
+    wdi.instructor1   (Fer)
+    wdi[instructor2]    (Denis)
+
+5)  How do I create a new property in the object above?
+
+    By assigning an object via dot notation or bracket notation.
+
+6)  How do I delete mysteriousInstructor in the object above?
+
+    wdi.pop();
+
+7)  What is this and how do we use it?
+
+    this refers to the current function that the context is in. It is often
+    used inside a function with loops.
+
+8)  What is the for loop syntax that is used to iterate through objects?
+
+    The loop iterates through objects by treating it as an array. i is
+    incremented and used to point to the specific element in an array, thus
+    iterating through an object and carrying out lines of code.
