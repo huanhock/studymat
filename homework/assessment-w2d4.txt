@@ -1,0 +1,20 @@
+1)  Explain the characteristics of each data type
+
+		Strings - represents a sequence of characters
+		Number - represents numeric values
+		Boolean - represents boolean value, either true or false
+		Undefined - represents undefined value
+		Null - represents no value at all
+
+2)	What are the default falsey truthy values?
+
+		Falsey - 0
+		Truthy - 1
+
+3)	Provide an example of it's use that showcases why/when may be useful to use them.
+
+		String - saving user remarks from a webpage
+		Number - saving phone number entry from users
+		Boolean - saving user preference to a certain feature
+		Array - storing a sequence of data where arrangement and position matters
+		Hash - associative array, more like Python's dictionary
